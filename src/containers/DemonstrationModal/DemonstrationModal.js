@@ -28,7 +28,6 @@ class DemonstrationModal extends Component {
         <ButtonShow clicked={this.showModal} />
         <Modal 
           showState={this.state.showModal}
-          show={this.showModal}
           closed={this.closedModal}
           title="Modal title"
           buttonsTypes={[
