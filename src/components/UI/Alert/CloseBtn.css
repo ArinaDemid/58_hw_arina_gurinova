@@ -1,0 +1,11 @@
+
+.BtnClose {
+    border: none;
+    color: rgb(237, 237, 243);
+    float: right;
+    background: transparent;
+}
+
+.BtnClose:focus{
+    outline: none;
+}

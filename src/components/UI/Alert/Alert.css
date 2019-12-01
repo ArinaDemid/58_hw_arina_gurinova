@@ -1,0 +1,43 @@
+.Alert {
+  position: fixed;
+  z-index: 500;
+  background-color: white;
+  width: 70%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  padding: 16px;
+  left: 15%;
+  top: 1%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+@media (min-width: 600px) {
+  .Modal {
+      width: 500px;
+      left: calc(50% - 250px);
+  }
+}
+
+.primary {
+  background: rgb(168, 201, 228);
+  color:  rgb(4, 34, 58);
+}
+
+.danger {
+  background: rgb(228, 182, 168);
+  color: rgb(112, 47, 27);
+}
+
+.success {
+  background: rgb(210, 228, 168);
+  color: rgb(104, 136, 30);
+}
+
+.warning {
+  background: rgb(211, 129, 127);
+  color: rgb(110, 34, 33);
+}

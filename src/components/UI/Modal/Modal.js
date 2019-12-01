@@ -1,7 +1,6 @@
 import React , {Fragment} from 'react';
 import '../Modal/Modal.css';
 import Backdrop from '../Backdrop/Backdrop';
-import {Button} from 'reactstrap';
 
 const Modal = props => (
   <Fragment>
@@ -17,14 +16,14 @@ const Modal = props => (
     {
       props.buttonsTypes.map(item => {
         return (
-        <Button 
+        <button 
           key={item.type} 
           className={item.type} 
           color={item.type} 
           onClick={item.clicked}
         >
           {item.label}
-        </Button>
+        </button>
         )
       })
     }

@@ -5,10 +5,10 @@ import {Button} from 'reactstrap';
 const ButtonShow = props => (
   <Button
     onClick={props.clicked}
-    color="success"
+    color={props.color}
     className='Button'
   >
-    Show Modal
+    {props.name}
   </Button>
 );
 

@@ -1,7 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import Modal from '../../components/UI/Modal/Modal';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import ButtonShow from '../../components/UI/Button/Button'
+import ButtonShow from '../../components/UI/Button/Button';
 
 class DemonstrationModal extends Component {
   state = {
@@ -25,7 +24,11 @@ class DemonstrationModal extends Component {
 
     return (
       <Fragment>
-        <ButtonShow clicked={this.showModal} />
+        <ButtonShow 
+          clicked={this.showModal} 
+          color='success' 
+          name='Show Modal'
+        />
         <Modal 
           showState={this.state.showModal}
           closed={this.closedModal}
@@ -37,10 +40,9 @@ class DemonstrationModal extends Component {
         >
           <p>This is modal content</p>
         </Modal>
-
       </Fragment>
     )
   }
-}
+};
 
 export default DemonstrationModal;
