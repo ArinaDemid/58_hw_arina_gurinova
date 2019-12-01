@@ -1,3 +1,1 @@
-# Burger template
-
-Special project for JS courses lesson
+# 58 homework
